@@ -12,7 +12,7 @@ class RestaurantsController < ApplicationController
     #   display all
     # end
     @category = params[:category]
-    if @category
+    if @category.present?
       @restaurants = RESTAURANTS.select do |id, resto|
         resto[:category] == @category
       end
