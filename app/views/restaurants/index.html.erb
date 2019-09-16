@@ -1,0 +1,8 @@
+<h1>My all restaurants</h1>
+
+<% @restaurants.each do |id, resto| %>
+  <h2><%= resto[:name] %></h2>
+  <p><%= resto[:address] %></p>
+  <p><%= resto[:category] %></p>
+
+<% end %>
